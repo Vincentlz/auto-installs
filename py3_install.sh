@@ -17,3 +17,9 @@ cd Python-3.7.2 &&
 ./configure --with-ssl &&
 make && make install &&
 echo "python3 installed successfullly!"
+#------------------------------------------------------------------------------------
+#卸载python3
+#      rpm -qa|grep python3|xargs rpm -ev --allmatches --nodeps       卸载pyhton3
+#      whereis python3 |xargs rm -frv           删除所有残余文件
+#      成功卸载！
+#      whereis   python       查看现有安装的python
