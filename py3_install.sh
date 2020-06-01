@@ -1,5 +1,3 @@
-
-
 yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel &&
 wget https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz &&
 tar -xvJf  Python-3.7.2.tar.xz &&
@@ -10,6 +8,7 @@ cd Python-3.7.2 &&
 #第二个可以提高python10%-20%代码运行速度.
 #第三个是为了安装pip需要用到ssl,后面报错会有提到.
 make && make install &&
+yum install libffi-devel &&
 ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3 &&
 ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3 &&
 python3 -V &&
