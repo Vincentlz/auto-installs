@@ -13,9 +13,9 @@ ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3 &&
 ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3 &&
 python3 -V &&
 pip3 -V &&
-cd Python-3.7.2 &&
-./configure --with-ssl &&
-make && make install &&
+#cd Python-3.7.2 &&
+#./configure --with-ssl &&
+#make && make install &&
 echo "python3 installed successfullly!"
 #------------------------------------------------------------------------------------
 #卸载python3
